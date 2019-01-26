@@ -42,6 +42,7 @@ console.log(consume("Mary","Poppins", greeting));  // Hello Mary Poppins, nice t
 
 // Explanation: 
 
+//Since all functions have access to the scope above them and 'variable - internal'  is defined in the scope above the 'nestedFunction()' it has access to the 'variable - internal'. 
 
 // const external = "I'm outside the function";
 
@@ -49,9 +50,10 @@ console.log(consume("Mary","Poppins", greeting));  // Hello Mary Poppins, nice t
 //   console.log(external);
 //   const internal = "Hello! I'm inside myFunction!";
 
-//   function nestedFunction() {
+//   function nestedFunction() { 
 //     console.log(internal);
 //   };
 //   nestedFunction();
+
 // }
 // myFunction();
